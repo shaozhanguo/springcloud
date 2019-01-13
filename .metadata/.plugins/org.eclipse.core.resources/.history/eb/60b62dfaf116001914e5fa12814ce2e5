@@ -1,0 +1,6 @@
+package com.test.service;
+
+@Service
+public class UserClientHystrix {
+
+}

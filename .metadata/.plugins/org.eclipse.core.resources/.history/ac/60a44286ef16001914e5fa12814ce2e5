@@ -1,0 +1,9 @@
+server.port=8002
+
+spring.application.name=service-zuul
+
+zuul.routes.api-a.path=/api-member/**
+zuul.routes.api-a.service-id=service-provide
+zuul.routes.api-b.path=/api-order/**
+zuul.routes.api-b.service-id=service-order
+eureka.client.service-url.defaultZone=http://localhost:1111/eureka/

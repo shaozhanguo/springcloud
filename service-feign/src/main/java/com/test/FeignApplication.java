@@ -17,12 +17,6 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 public class FeignApplication 
 {
-	@Bean	//加入bean容器中
-	@LoadBalanced	//支持负载均衡
-	RestTemplate restTemplate() {
-		return new RestTemplate();
-	}
-	
     public static void main(String[] args )
     {
     	SpringApplication.run(FeignApplication.class, args);

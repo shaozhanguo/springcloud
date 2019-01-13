@@ -1,0 +1,14 @@
+package com.test.service;
+
+import java.util.List;
+
+@Service
+public class UserClientHystrix implements UserClient{
+
+	@Override
+	public List<String> getuserinfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
